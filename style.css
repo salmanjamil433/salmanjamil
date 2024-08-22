@@ -490,3 +490,48 @@ body {
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
+@media only screen and (max-width: 768px) {
+  .wrapper {
+      width: 100%;
+      height: auto;
+      padding: 10px; /* Minimal padding */
+  }
+
+  .cover, .book-page {
+      width: 100%;
+      height: auto;
+  }
+
+  .profile-page img {
+      max-width: 120px; /* Slightly reduce size */
+      margin: 0 auto 10px; /* Center and add margin */
+      display: block; /* Ensure image is centered */
+  }
+
+  .profile-page h1 {
+      font-size: 1.8rem;
+      text-align: center; /* Center text */
+  }
+
+  .profile-page h3 {
+      font-size: 1.2rem;
+      text-align: center; /* Center text */
+  }
+
+  /* Ensure text or elements don't overflow */
+  .profile-page p, .profile-page .description {
+      font-size: 1rem;
+      text-align: justify;
+      margin-bottom: 10px;
+  }
+
+  .services-box, .skills-box {
+      flex-direction: column; /* Stack elements */
+      align-items: stretch; /* Ensure full width */
+  }
+
+  .services-content, .skills-content {
+      width: 100%; /* Full width */
+      margin-bottom: 20px; /* Space between items */
+  }
+}
